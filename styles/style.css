@@ -125,3 +125,29 @@ button:hover{
 .res p {
     font-size: 1.2em;
 }
+
+.footer {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    
+}
+
+.footer a {
+    color: black;
+    font-size: 3em;
+    margin: 10px;
+    transition: .3s;
+}
+
+.footer i {
+    transition: .3s;
+}
+
+
+
+.footer i:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}

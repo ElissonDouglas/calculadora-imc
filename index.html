@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/calculator.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="calculadora">
@@ -41,33 +43,11 @@
             <p>Preencha os campos para calcular</p>
         </div>
     </div>
-    <!--<script>
-    let res = document.getElementById("resultado")
-    function calcula(){
-        var sexo = document.querySelector('input[name="radsex"]:checked').value;
-        res.innerHTML = ''
-        if (altura.value == 0 || peso.value == 0) {
-            alert("[ERRO] Você precisa preencher todos os campos para continuar.")
-        } else {
-            alert('passou')
-        } 
-    }
-
-    function verificarHomem(imc) {
-        alert('homem')
-        if (imc < 20) {
-            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está <strong>abaixo do peso</strong>.</p>`
-        } else if (imc >= 20 && imc <= 24.9) {
-            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está no seu <strong>peso normal</strong>.</p>`
-        } else if (imc > 25 && imc <= 29.9) {
-            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade leve</strong>.</p>`
-        } else if (imc >= 30 && imc <= 39.9) {
-            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade moderada</strong>.</p>`
-        } else if (imc > 40) {
-            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade mórbida</strong>.</p>`
-        }
-    }
-    </script>-->
+    <dir class="footer">
+        <a href="https://github.com/ElissonDouglas" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/elisson_douglas" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+    </dir>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="titulo">
+            <h1>Calculadora IMC</h1>
+        </div>
+        <hr>
+        <div class="principal">
+            <div class="campos">
+                <label for="altura">Altura</label>
+                <input type="number" name="altura" id="altura" placeholder="ex: 1.70" required>
+            </div>
+
+            <div class="campos">
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso" placeholder="ex: 75.5kg" required>
+            </div>
+
+            <div class="campos" id="sexo">
+                <div>
+                    <input type="radio" name="radsex" id="masculino" value="homem" checked>
+                    <label for="masculino">Homem</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="radsex" id="feminino" value="mulher">
+                    <label for="feminino">Mulher</label>
+                </div>
+            </div>
+        </div>
+        <button onclick="calcula()">Calcular</button>
+        <div class="res" id="resultado">
+            <p>Preencha os campos para calcular</p>
+        </div>
+    </div>
+    <!--<script>
+    let res = document.getElementById("resultado")
+    function calcula(){
+        var sexo = document.querySelector('input[name="radsex"]:checked').value;
+        res.innerHTML = ''
+        if (altura.value == 0 || peso.value == 0) {
+            alert("[ERRO] Você precisa preencher todos os campos para continuar.")
+        } else {
+            alert('passou')
+        } 
+    }
+
+    function verificarHomem(imc) {
+        alert('homem')
+        if (imc < 20) {
+            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está <strong>abaixo do peso</strong>.</p>`
+        } else if (imc >= 20 && imc <= 24.9) {
+            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está no seu <strong>peso normal</strong>.</p>`
+        } else if (imc > 25 && imc <= 29.9) {
+            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade leve</strong>.</p>`
+        } else if (imc >= 30 && imc <= 39.9) {
+            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade moderada</strong>.</p>`
+        } else if (imc > 40) {
+            return `<p>Seu IMC é ${imc.toFixed(2)}.<br>Você está com <strong>obesidade mórbida</strong>.</p>`
+        }
+    }
+    </script>-->
+    <script src="js/script.js"></script>
+</body>
+</html>
